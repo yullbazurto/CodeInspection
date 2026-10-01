@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="Custom Rules"
+    xmlns="https://pmd.github.io/ruleset/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://pmd.github.io/ruleset/2.0.0 https://pmd.github.io/ruleset_2_0_0.xsd">
+
+    <description>Code Inspection Lab - Yull Bazurto</description>
+
+    <!-- Buenas practicas -->
+    <rule ref="category/java/bestpractices.xml/SwitchStmtsShouldHaveDefault"/>
+
+    <!-- Estilo de codigo -->
+    <rule ref="category/java/codestyle.xml/FieldNamingConventions"/>
+    <rule ref="category/java/codestyle.xml/ShortVariable"/>
+    <rule ref="category/java/codestyle.xml/LongVariable"/>
+
+    <!-- Rendimiento -->
+    <rule ref="category/java/performance.xml/RedundantFieldInitializer"/>
+
+    <!-- Diseno -->
+    <rule ref="category/java/design.xml/ImmutableField"/>
+
+    <!-- Propenso a errores -->
+    <rule ref="category/java/errorprone.xml/UseLocaleWithCaseConversions"/>
+</ruleset>
